@@ -3,7 +3,7 @@ clear;
 close all;
 
 %To find threshold value
-Raw_eeg = importdata('S01G2AllRawChannels.csv');% Replace your file name
+Raw_eeg = importdata('eeg_data.csv');% Replace your file name
 extract = Raw_eeg.data;
 eeg_data = extract(2:end,1);
 
@@ -20,7 +20,7 @@ fprintf('The delta threshold value for given dataset: %f\n', delta_threshold);
 fprintf('The theta threshold value for given dataset: %f\n\n', theta_threshold);
 
 % Continous Monitoring
-Raw_eeg = importdata('S01G1AllRawChannels.csv');% Replace your file name
+Raw_eeg = importdata('eeg_data.csv');% Replace your file name
 extract = Raw_eeg.data;
 eeg_data = extract(2:end,1);
 
